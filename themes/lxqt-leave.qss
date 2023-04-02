@@ -1,0 +1,73 @@
+/* The main Leave dialog window */
+QDialog {
+	color:				#f8f8f2;
+	background:			#22232e;
+
+	border:				1px solid #1a1b23;
+}
+
+/* Caption colors */
+QLabel {
+	color:				#f8f8f2;
+	background:			transparent;
+
+	padding:			8px;
+}
+
+/* Available actions - only partially themeable as of LXQt 1.2.x */
+QAbstractItemView {
+	color:				#f8f8f2;
+        background:             	#1e1f29;
+
+	border:				3px solid transparent;
+	border-image:			url(assets/boxes/entry.png) 3;
+}
+
+/* Button settings */
+QPushButton {
+        color:                          #f8f8f2;
+        background:                     #22232e;
+
+        border:                         3px solid transparent;
+        border-image:                   url(assets/buttons/button.png) 3;
+
+        padding-left:                   24px;
+        padding-right:                  24px;
+        padding-top:                    4px;
+        padding-bottom:			4px;
+
+	margin-left:			10px;
+	margin-right:			10px;
+}
+
+QToolButton {
+        color:                          #f8f8f2;
+        background:                     #22232e;
+
+        border:                         3px solid transparent;
+        border-image:                   url(assets/buttons/button.png) 3;
+
+        padding-left:                   6px;
+        padding-right:                  6px;
+        padding-top:                    4px;
+        padding-bottom:			4px;
+
+	margin-left:			10px;
+	margin-right:			10px;
+}
+
+QPushButton:hover, QToolButton:hover {
+        color:                          #f8f8f2;
+        background:                     #282a36;
+
+        border:                         3px solid transparent;
+        border-image:                   url(assets/buttons/hover.png) 3;
+}
+
+QPushButton:pressed, QToolButton:pressed {
+        color:                          #f8f8f2;
+        background:                     #0f0f15;
+
+        border:                         3px solid transparent;
+        border-image:                   url(assets/buttons/active.png) 3;
+}

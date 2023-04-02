@@ -1,0 +1,160 @@
+/* Dropdown */
+#panel {
+	color:				#f8f8f2;
+	background:			#22232e;
+
+	border:				3px solid transparent;
+	border-image:			url(assets/buttons/button.png) 3;
+}
+
+QMenu {
+        color:                          #f8f8f2;
+        background:                     #242530;
+
+        border:                         1px solid #1a1b23;
+        border-radius:                  0px;
+
+        min-width:                      100px;
+
+        font:                           normal;
+}
+
+QMenu::item {
+        color:                          #f8f8f2;
+        background:                     transparent;
+
+        border:                         none;
+
+        padding-left:                   5px;
+        padding-right:                  5px;
+        margin:                         0px;
+
+        min-width:                      100px;
+        min-height:                     24px;
+}
+
+QMenu::item:selected {
+        background:                     #705c94;
+}
+
+QMenu::item:disabled {
+        color:                          #8b8c8e;
+}
+
+QMenu::icon {
+        padding:                        0px 4px 0px 3px;
+        qproperty-iconSize:             16px;
+}
+
+#closeButton {
+	qproperty-icon:			url(assets/buttons/close.svg);
+	qproperty-iconSize:		16px;
+}
+
+#actionButton {
+	qproperty-icon:			url(assets/buttons/menu.svg);
+	qproperty-iconSize:		16px;
+}
+
+QToolButton {
+        color:                          #f8f8f2;
+        background:                     transparent;
+
+        border:                         3px solid transparent;
+        border-image:                   none;
+
+	padding:			3px;
+}
+
+QToolButton:hover {
+        color:                          #f8f8f2;
+        background:                     #282a36;
+
+        border:                         3px solid transparent;
+        border-image:                   url(assets/buttons/hover.png) 3;
+}
+
+QToolButton:pressed {
+        color:                          #f8f8f2;
+        background:                     #0f0f15;
+
+        border:                         3px solid transparent;
+        border-image:                   url(assets/buttons/active.png) 3;
+}
+
+QToolButton::menu-indicator {
+	image:				none;
+}
+
+QLineEdit {
+        color:                          #f8f8f2;
+        background:                     #282a36;
+
+        border:                         3px solid transparent;
+        border-image:                   url(assets/boxes/entry.png) 3;
+
+        padding:                        2px;
+        margin:                         4px;
+}
+
+#commandList {
+	color:				#f8f8f2;
+	selection-color:		#f8f8f2;
+
+	background:			#0f0f15;
+	alternate-background-color:	#0f0f15;
+	selection-background-color:	#705a94;
+
+	border:				1px solid #1a1b23;	
+}
+
+#commandList::item, #commandList::item:alternate {
+	color:				#f8f8f2;
+	selection-color:		#f8f8f2;
+
+	background:			transparent;
+
+	border:				none;
+
+	padding:			0px 5px;
+
+	min-width:			100px;
+	min-height:			24px;
+}
+
+#commandList::item:hover, #commandList::item:selected {
+	color:				#f8f8f2;
+	background:			#705a94;
+}
+
+QScrollBar {
+        color:                          #f8f8f2;
+        background:                     #232530;
+
+        width:                          12px;
+}
+
+QScrollBar::handle {
+        color:                          #a1a1a2;
+        background:                     #a1a1a2;
+
+        border:                         none;
+        border-radius:                  2px;
+
+        width:                          6px;
+
+        margin:                         5px; /* No, I don't know why either... */
+}
+
+QScrollBar::handle:hover {
+        color:                          #cccdca;
+        background:                     #cccdca;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line,
+QScrollBar::add-page, QScrollBar::sub-page {
+        color:                          transparent;
+	background:			transparent;
+
+	border:				none;
+}
