@@ -1,0 +1,146 @@
+/* Dropdown panel */
+#panel {
+    color: #f8f8f2;
+    background: #1e1f29;
+    border: 1px solid #16161a;
+}
+
+/* Buttons */
+QToolButton {
+    color: #f8f8f2;
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: none;
+    padding: 3px;
+}
+
+QToolButton:hover {
+    border-image: url(assets/buttons/button.png);
+}
+
+QToolButton:pressed {
+    border-image: url(assets/buttons/button-active.png);
+}
+
+QToolButton::menu-indicator {
+    image: none;
+}
+
+#closeButton {
+    qproperty-icon: url(assets/icons/close.svg);
+    qproperty-iconSize: 16px;
+}
+
+#actionButton {
+    qproperty-icon: url(assets/icons/menu.svg);
+    qproperty-iconSize: 16px;
+}
+
+/* Command box */
+#commandEd {
+    color: #f8f8f2;
+    background: #16161a;
+    selection-color: #f8f8f2;
+    selection-background-color: #6e5591;
+    border: 1px solid #191a22;
+    border-radius: 2px;
+    margin: 3px;
+    padding: 3px;
+    font: normal;
+}
+
+/* Search results */
+#commandList {
+    color: #f8f8f2;
+    background: #16161a;
+    border: 1px solid #1e1f29;
+    border-top: none;
+}
+
+#commandList::item,
+#commandList::item:alternate {
+    color: #f8f8f2;
+    background: #16161a;
+}
+
+#commandList::item:hover,
+#commandList::item:selected,
+#commandList::item:selected:hover {
+    color: #f8f8f2;
+    background: #6e5591;
+}
+
+/* Menus  - may copy QMenu section from lxqt-panel.qss */
+QMenu {
+    color: #f8f8f2;
+    background: #242530;
+    border: 1px solid rgba(13, 14, 34, 90%);
+    min-width: 120px;
+}
+
+QMenu::item {
+    color: #f8f8f2;
+    background: transparent;
+    border: 1px solid transparent;
+    padding: 4px 3px;
+    min-width: 120px;
+}
+
+QMenu::item:selected {
+    color: #f8f8f2;
+    background: #705b94;
+    border-top: 1px solid #6e5591;
+}
+
+QMenu::item:disabled {
+    color: #8b8c8e;
+}
+
+QMenu:icon {
+    padding-left: 5px;
+}
+
+/* Scrollbars  - may copy QScrollBar:vertical section from lxqt-panel.qss */
+QScrollBar:vertical {
+    color: #f8f8f2;
+    background: transparent;
+    border: 0px solid transparent;
+    width: 12px;
+}
+
+QScrollBar::handle:vertical {
+    color: #f8f8f2;
+    background: #999999;
+    border: 0px solid transparent;
+    border-radius: 2px;
+    width: 4px;
+    margin: 4px;
+    min-height: 24px;
+}
+
+QScrollBar::handle:hover:vertical {
+    background: #4d4d4d;
+}
+
+QScrollBar::handle:pressed:vertical {
+    background: #6e5591;
+}
+
+QScrollBar:add-line:vertical,
+QScrollBar:sub-line:vertical,
+QScrollBar:add-page:vertical,
+QScrollBar:add-page:vertical,
+QScrollBar:add-line:horizontal,
+QScrollBar:sub-line:horizontal,
+QScrollBar:add-page:horizontal,
+QScrollBar:add-page:horizontal {
+    width: 0px;
+    height: 0px;
+}
+
+/* Tooltips - may copy QToolTip section from lxqt-panel.qss */
+QToolTip {
+    color: #f8f8f2;
+    background: #1e1f29;
+    border: 1px solid #000000;
+}

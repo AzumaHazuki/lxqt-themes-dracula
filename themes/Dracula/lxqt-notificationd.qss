@@ -1,0 +1,31 @@
+Notification {
+    color: #f8f8f2;
+    background: #1e1f29;
+    border: 1px solid #16161a;
+    border-radius: 2px;
+}
+
+QLabel {
+    color: #f8f8f2;
+}
+
+#appLabel {
+    font-weight: bold;
+}
+
+#closeButton {
+    color: #f8f8f2;
+    background: none;
+    border: 2px solid transparent;
+    border-image: none;
+    margin: 2px;
+    padding: 2px;
+}
+
+#closeButton:hover {
+    border-image: url(assets/buttons/button.png);
+}
+
+#closeButton:pressed {
+    border-image: url(assets/buttons/button-active.png);
+}
