@@ -268,6 +268,11 @@ LXQtFancyMenuWindow {
     border-image: url(assets/panel/task-active.png);
 }
 
+#TaskBar QToolButton[urgent="true"],
+#DesktopSwitch QToolButton[urgent="true"] {
+    border-image: url(assets/panel/task-urgent.png);
+}
+
 /* QuickLaunch, Clock, Calendar, and misc. applets */
 #QuickLaunchPlaceHolder {
     color: #f8f8f2;
@@ -409,7 +414,7 @@ VolumePopup > QPushButton:pressed,
 }
 
 /* Sliders and Scrollbars */
-QSlider {
+LXQtPanel QSlider {
     color: #f8f8f2;
     background: transparent;
     border: none;
@@ -417,7 +422,7 @@ QSlider {
     min-height: 120px;
 }
 
-QSlider::groove {
+LXQtPanel QSlider::groove {
     color: #f8f8f8;
     background: #6e5591;
     border: 1px solid #67558b;
@@ -427,7 +432,7 @@ QSlider::groove {
     padding: 2px 0px;
 }
 
-QSlider::sub-page {
+LXQtPanel QSlider::sub-page {
     color: #f8f8f8;
     background: #2d2f3b;
     border: 1px solid #2b2d39;
@@ -437,7 +442,7 @@ QSlider::sub-page {
     padding: 2px 0px;
 }
 
-QSlider::handle {
+LXQtPanel QSlider::handle {
     color: #eaeaea;
     background: transparent;
     background-image: url(assets/scrollbars/slider.png);
@@ -447,11 +452,11 @@ QSlider::handle {
     margin: -12px;
 }
 
-QSlider::handle:hover {
+LXQtPanel QSlider::handle:hover {
     background-image: url(assets/scrollbars/slider-hover.png);
 }
 
-QSlider::handle:hover {
+LXQtPanel QSlider::handle:pressed {
     background-image: url(assets/scrollbars/slider-active.png);
 }
 
